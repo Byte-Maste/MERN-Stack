@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+     <legend>Html from lecture8</legend>
+        <form >
+            <label for="Date">Date:</label>
+           <input type="date" id="Date">
+           <br/>
+           <br/>
+           <label for="Topic">DSA:</label>
+           <select name="Problems" id="Topic">
+               <option value="array">Array</option>
+               <option value="String">String</option>
+               <option value="Binarysearch">Binarysearch</option>
+               <option value="linkedlist">LinkedList</option>
+               <option value="queue">Queue</option>
+           </select>
+           <br>
+           <br>
+           <button>Click</button>
+   
+           <br>
+           <br>
+
+           <!-- selecting multiple option below -->
+           <label for="roles">Select Roles:</label><br>
+           <select name="roles[]" id="roles" multiple size="3">
+           <option value="frontend">Frontend</option>
+           <option value="backend">Backend</option>
+            <option value="fullstack">Full Stack</option>
+            </select>
+   
+     <br>
+     <br>
+     <label for="COURSE">Choose courses:</label>
+  <select  id="COURSE" multiple>
+    <option value="algoritham for placement">algoritham for placement</option>
+    <option value="DBMS">DBMS</option>
+    <option value="tries">Tries</option>
+  </select>
+       </form>
+    </fieldset>
+</body>
+</html>
