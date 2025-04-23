@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning CSS types inline,internal,external</title>
+    <!-- external CSS -->
+    <link rel="stylesheet" href="style.css" >
+
+    <!-- internal CSS -->
+    <style>
+        h1{
+            color: green !important;
+        }
+        #hello{
+            background-color: chocolate;
+        }
+        .alltheptag{
+            background-color: lightgreen;
+        }
+        /* group selector symbol is ","  grouping indivdual selector*/
+        div,article{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- css depends on which 4 factors mdn refere this to check priority -->
+     <!-- inline CSS -->
+    <h1 style="color: red;">Welcome to MAANGCoding</h1> 
+
+
+     <!-- selector types element, clss, id, group selector -->
+    <p id="hello" class="alltheptag">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, veniam esse!
+         Veritatis autem in obcaecati dicta dolorum atque dolores fugiat?</p>
+
+     <p class="alltheptag">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim cupiditate quibusdam,
+         commodi minus necessitatibus praesentium corrupti veniam. Alias eveniet impedit
+          sed similique asperiores a, tempore eligendi itaque quas neque sapiente saepe
+           soluta vel facere qui reprehenderit aut repellendus unde vitae obcaecati. Nam 
+           possimus, earum fugit labore ipsa ratione alias impedit?
+     </p>    
+     <div>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae mollitia perspiciatis earum, tenetur quam 
+            repudiandae dolores dolorem quod magni, quos iusto commodi maiores facilis corrupti adipisci! Repudiandae 
+            fugit ullam facilis.</p>
+     </div>
+     <article>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quisquam obcaecati repudiandae ipsam similique
+         sed inventore placeat quod autem veniam, magnam odio a dolor quasi. Ab ipsa ipsam rem quo.
+     </article>
+</body>
+</html>
