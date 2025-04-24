@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Learning Fonts and Color</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+RO:wght@100..400&display=swap" rel="stylesheet">
+    <style>
+        p {
+           /* font-style: italic;  */
+           font-family: "Playwrite RO", cursive; /* font from google when not available in vs code package*/
+           font-size: 20px;
+           /* font-family: 'Times New Roman', Times, serif; */
+        line-height: 50px; /* space between two lines */
+        font-weight: 100; /* represents the boldness of the text from 100 to 900 */
+        }
+        #firstpara{
+            background-color: red; /* represent the color using name */
+        }
+        #secondpara{
+            background-color: rgb(255, 200, 79); /* red color using rgb() function */
+        }
+        #thirdpara{
+            background-color: #ffab36;/* represent the color using hex first two value for red color and middle two value for green and last two value for blue */
+        }
+        .forthpara{
+           /* represent the color using hsl() function  */
+           background-color: hsl(120, 100%, 50%); 
+        }
+    </style>
+</head>
+<body>
+    <h2>Wlcome to MAANGCoding</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, dicta.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id eius eos ad nulla sunt vel ab, quasi
+         nisi ipsa atque. Consequatur porro esse facilis deserunt debitis voluptas inventore eius cum.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat quis incidunt molestias consequatur 
+         hic quidem. Facere, repudiandae, enim dolorem tempore assumenda similique ad corrupti omnis
+          temporibus magnam explicabo in perspiciatis obcaecati perferendis minima eos sint fuga? Explicabo 
+          ipsum mollitia animi, dolorem, perspiciatis aliquam eum minus numquam eveniet unde, odit asperiores?
+           Necessitatibus totam in repellendus officia commodi nesciunt sequi eveniet amet!</p>
+
+
+       <p id="firstpara">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique neque voluptatem nostrum voluptatibus dolorem praesentium quis tenetur rem labore aspernatur?</p>
+       <p id="secondpara">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et neque voluptatum earum nam quo alias nihil qui, corporis ipsum cum?</p>
+       <p id ="thirdpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur deleniti laborum facere fugit ea minima voluptate quasi perspiciatis dolorum minus.</p> 
+       <p class="forthpara">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore ab maxime asperiores atque nisi amet voluptatibus illo cupiditate, dolores sed molestias, iste veritatis saepe dolorem? Earum dolor dignissimos amet suscipit.</p>   
+</body>
+</html>
