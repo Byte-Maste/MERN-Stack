@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Box Model in Css</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        h1{
+            /* study about border property */
+            /* border-style: solid;/* solid, dotted , dashed
+            border-width: 2px;
+            border-color: red; */
+
+             /* border short hand property */
+             border: 2px solid brown;
+
+             
+             /* border-top-left-radius: 5px; */
+             /* border-bottom-left-radius: 5px; */
+
+             border: 2px solid brown;/*oder does not matter of like it can be solid 2px brown*/
+            background-color: aqua;
+            border-radius: 5px;
+            width: 500px;
+            height:100px
+        }
+        #firstpara{
+            background-color: antiquewhite;
+            padding: 60px;
+            margin: 30px;
+            /* margin-top: 50px;
+            margin-left:20px; */
+            /* padding: 20px 30px 40px 50px; */
+        }
+        #secondpara{
+            background-color: bisque;
+        }
+        #thirdpara{
+            background-color: beige;
+        }
+        #firstpara, #secondpara, #thirdpara{
+            border: 2px solid brown;
+            border-radius: 5px;
+            width: 500px;
+            /* height:150px; */
+        }
+        span{
+            /* note in span tag the height and width does not change because it is an
+             inline element and to  change width and height we need to change into block
+              using display:block; */
+            border: 2px solid brown;
+            width: 500px;
+            height:150px;
+            background-color: lightblue;
+            /* display: block; */
+        }
+        #box_content{
+            box-sizing: content-box;
+            background-color: yellow;
+            border: solid 5px red;
+            width: 300px;
+            height: 50px;
+            padding: 50px;
+        }
+        #border_box{
+            box-sizing: border-box;
+            background-color: yellow;
+            border: solid 5px red;
+            width: 300px;
+            height: 50px;
+            padding: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to MAANGCoding</h1>
+
+     <span >Hello Guys</span>
+    <p id="firstpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus enim inventore voluptate. 
+        Quisquam reprehenderit repellendus, consequatur facilis ipsa sapiente quod ipsum veniam 
+        maiores distinctio accusantium minima placeat tempore nihil maxime.</p>
+
+    <p id="secondpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque nam perspiciatis, 
+        ullam modi, est odio error beatae pariatur molestiae quidem eaque illum vel iusto 
+        blanditiis sed sapiente, possimus magnam recusandae earum ipsam? Sapiente corrupti
+         vero quas blanditiis vel ullam in quibusdam voluptate, aliquam culpa. Modi voluptate 
+         consectetur in nam ullam!</p>
+
+    <p id="thirdpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias accusantium iure
+         eaque ullam earum harum ipsam dolores, eos natus quibusdam.</p>
+
+         <div id="box_content">
+            I am content box
+         </div>
+
+         <div id="border_box">
+            I am border-box
+         </div>
+</body>
+</html>
