@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn about display property in css</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        div{
+            border: solid 2px red;
+            background-color: aqua;
+            width: 300px;
+            height: 500px;
+            padding: 30px;
+            margin: 20px;
+            /* converting block element to inline element */
+            display: inline;
+        }
+        span{
+            border: solid 2px brown;
+            background-color: bisque;
+            width: 100px;
+            height: 300px;
+            /* display: block; */
+        }
+        a{
+            background-color: blanchedalmond;
+            display: inline-block;
+            border: solid 2px blue;
+            width: 300px;
+            height: 500px;
+            padding: 30px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+      <!-- blcok element is div, p is satisfies new line , by default extreme width, support custom width and height, support custom margin and padding-->
+      <div >Welcome to MAANGCoding</div>
+      <div>MAANGCoding 2.0</div>
+      <!-- Inline elemnt is a, span is don't print next element in new line , content width is coverd, does't support custom width and height, support horizontal margin only and support padding from all directions-->
+       <span>Hello Guys</span>
+       <span>Hip Hop Hura</span>
+      <!-- convert the inline element to inline-block the difference is it support widht,height,margin,padding but print does't print the next element in new line -->
+       <a href="">Lorem ipsum dolor sit amet.</a>
+       <span>Hai inine kaam kar gaya me new line mein nhi aya hu</span>
+</body>
+</html>
