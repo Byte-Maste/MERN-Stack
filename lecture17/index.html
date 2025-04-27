@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn about Position property</title>
+    <style>
+       *{
+        margin: 0px;
+        padding: 0px;
+       }
+       .container{
+         border: solid 2px red;
+         padding: 10px;
+         height: 1000px;
+         /* position: relative; */
+         background-color: bisque;
+       }
+        .image1{
+            /* postion relative is applied for current window and gap is mainted it means that at place of image1 no other image2 or image3 take place */
+            /* position: relative;  */
+            top: 50px;
+            bottom:20px;
+            left:40px;
+            right: 10000px;
+        }
+        .image2{
+            /* but to apply absolute the parent must applied position property of relative
+             here parent of image tag is div tag then it should be relative
+             if now we apply the top 40px then it is from div(parent) tag it distance is calculated and applied*/
+                        /* postion relative is applied for current window and gap is mainted it means that at place of image1 no other image2 or image3 take place */
+            /* position: absolute; */
+            position: sticky;
+            top: 40px;
+        }
+        .image3{
+            /* postion fixed in applied for entire web page */
+            /* position: fixed; */
+            /* diffrence between fixed and sticky is sticky property is only for particular section after scrolling or end of that section it won't stick but fixed is for entire web page scrolling */
+            position: fixed;
+        }
+        .container2{
+            border: solid 2px red;
+         padding: 10px;
+         height: 1000px;
+         background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img
+         src="img1.png" 
+         alt="picture1"
+         width="200px"
+         height="200px"
+         class="image1"
+         >
+        <img
+         src="img2.png" 
+         alt="picture2"
+         width="200px"
+         height="200px"
+         class="image2"
+         >
+        <img 
+        src="img3.png" 
+        alt="picture3"
+        width="200px"
+         height="200px"
+         class="image3"
+        >
+    </div>
+    <div class="container2">
+        <img
+         src="img1.png" 
+         alt="picture1"
+         width="200px"
+         height="200px"
+         class="image4"
+         >
+        <img
+         src="img2.png" 
+         alt="picture2"
+         width="200px"
+         height="200px"
+         class="image5"
+         >
+        <img 
+        src="img3.png" 
+        alt="picture3"
+        width="200px"
+         height="200px"
+         class="image6"
+        >
+    </div>
+</body>
+</html>
