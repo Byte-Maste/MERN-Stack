@@ -7,11 +7,21 @@
     <style>
           .container
           {
+            height: 500px;
           border:2px solid black;
-          background-color: aliceblue;
+          background-color: rgb(193, 217, 238);
           display: flex;
           flex-direction: row;
-          flex-wrap: wrap;
+          /* flex-wrap: wrap; */
+          /* short hand property is flex-flow which contain direction and responsiveness is added by
+          wrap flex-wrap : wrap; */
+          /* flex-flow:  column wrap;*/
+          /* flex-direction: row; */
+          /* if flex direction is row then main axis is horizontal 
+             if flex direction is column then main aixs is vertical */
+             justify-content: start; 
+             align-items: start;
+             align-content: start;
           }
           .box{
             border: 2px solid black;
@@ -22,15 +32,23 @@
           }
           #box1{
             background-color: red;
+            order: 500;
+            /* flex-shrink: 4; */
+            flex-grow: 5;
           }
           #box2{
             background-color: green;
+            flex-grow: 1;
+
           }
           #box3{
             background-color: blue;
+            flex-grow: 1;
           }
           #box4{
             background-color: yellow;
+            order: -1;
+            flex-grow: 1;
           }
     </style>
 </head>
