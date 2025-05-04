@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: antiquewhite;
+            width: 300px;
+            height: 200px;
+            border: 2px solid black;
+            display: flex;
+        }
+        
+        .text{
+            background-color: green;
+            width: 150px;
+            height: 20px;
+            border: 2px solid black;
+            margin: 3px;
+            padding: 5px;
+            
+        }
+        .texts{
+            display: flex;
+            flex-direction: column;
+        }
+        .image{
+           width: 150px;
+           height: 150px;
+           margin: 3px;
+           border: 2px solid black;
+           background-color: aqua;
+        }
+        @media (max-width:640px){
+            .container{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="texts">
+            <div class="text">Text 1</div>
+            <div class="text">Text 2</div>
+        </div>
+        
+        <div class="image">
+            <img src="bhagatsingh.jpg" alt="pic of bhhagatshigh" width="100px" height="100px">
+        </div>
+    </div>
+</body>
+</html>
