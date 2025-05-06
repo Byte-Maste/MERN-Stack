@@ -27,9 +27,12 @@
             position: relative;
             animation-name: example;
             animation-timing-function: cubic-bezier(1,1,1,1);
-            animation-iteration-count: 2;
+            animation-iteration-count: infinite;
             animation-duration: 4s;
             animation-delay: 2s;
+            /* animation-direction: alternate; */
+            animation-fill-mode: forwards;
+            animation-play-state: running;
         }
         @keyframes example {
             from{
@@ -41,11 +44,72 @@
                 left: 1200px;
             }
         }
+        #circle{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            border: 2px solid black;
+            border-radius: 50px;
+            margin: 5px;
+            position: relative;
+            /* @keyframes duration | easing-function | delay |
+iteration-count | direction | fill-mode | play-state | name */
+           animation: 10s cubic-bezier(0.25, 0.1, 0.25, 1) 2s infinite alternate backwards running circleMovement;
+           top: 25%;
+           left: 50%;
+        }
+        @keyframes circleMovement{
+            0%{
+                top: 0px;
+                left:0px;
+            }
+            25%{
+                top: 0px;
+                left: 1300px;
+            }
+            50%{
+                top: 400px;
+                left: 0px;
+            }
+            75%{
+                top: 400px;
+                left: 1300px;
+            }
+        }
+        .box2{
+            width: 300px;
+            height: 100px;
+            background-color: blue;
+            border: 2px solid black;
+            margin: 5px;
+            border-radius: 10px;
+            position: relative;
+            /* @keyframes duration | easing-function | delay |
+iteration-count | direction | fill-mode | play-state | name */
+           animation: 4s linear 2s infinite alternate backwards running leftMovement;
+
+        }
+        @keyframes leftMovement{
+            from{
+                top:450px;
+                left:1200px;
+            }
+            to{
+                top: 450px;
+                left:0px;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="box">
+
+        </div>
+          <div id="circle">
+
+          </div>
+        <div class="box2">
 
         </div>
     </div>
