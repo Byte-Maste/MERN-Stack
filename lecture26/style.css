@@ -14,10 +14,8 @@
     background: #0f0c29;
     background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  
     background: linear-gradient(to right, #24243e, #302b63, #0f0c29); 
-   
-    
+    padding: 0px 20px; 
 }
-
 #navList{
     list-style: none;
     display: flex;
@@ -25,13 +23,75 @@
     align-items: center;
     padding: 5px;
 }
+#navListItems{
+    display: flex;
+    gap: 20px;
+}
 a{
     text-decoration: none;
     font-size: 1.5rem;
     color: azure;
-    gap: 0px 40px;
+    /* padding: 0px 20px;
+    margin: 0px 20px; */
 }
 p{
     font-size: 2.8rem;
     color: azure;
+}
+.footer{
+    background: #0f0c29;
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29); 
+    width: 100vw;
+    height: 40px;
+    text-align: center;
+}
+.footer p{
+    color: azure;
+    font-size: 20px;
+    padding: 10px 0px;
+}
+.contentbox{
+    width: 70%;
+    height: auto;
+    margin: auto;
+    padding: 40px;
+    box-shadow: 0px 0px 20px black;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 60px;
+}
+.item
+{
+    display: flex;
+    justify-content: space-around;
+}
+.rightbox{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.rightbox img{
+    height: 400px;
+    width: 300px;
+    box-shadow: 0px 0px 20px black;
+    border-radius: 10px;
+    
+    transition: all 6s linear 0s;
+}
+.rightbox:hover{
+     transform: scale(1.1);
+    
+}
+.rightbox p{
+    font-size: 1.4rem;
+    color: azure;
+    position: absolute;
+     
+    
+    
 }
