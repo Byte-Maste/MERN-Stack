@@ -69,11 +69,8 @@ p{
     justify-content: space-around;
 }
 .rightbox{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
+    position: relative;  
+     transition: all 0.3s linear 0s;
 }
 .rightbox img{
     height: 400px;
@@ -81,17 +78,31 @@ p{
     box-shadow: 0px 0px 20px black;
     border-radius: 10px;
     
-    transition: all 6s linear 0s;
+   
+    
 }
 .rightbox:hover{
      transform: scale(1.1);
+}
+.rightbox .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+   background-color: rgba(36, 34, 34, 0.764); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all 0.3s linear 0s;
+}
+.rightbox:hover .overlay{
+    opacity: 1;
     
 }
-.rightbox p{
+.rightbox .overlay span{
     font-size: 1.4rem;
     color: azure;
-    position: absolute;
-     
-    
-    
 }
