@@ -1,0 +1,36 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(63, 60, 60);
+    display: grid;
+    padding: 10px;
+    gap: 5px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,1fr);
+    justify-items: start;
+    /* align-items: stretch; */
+    /* place-items: center; */
+    }
+.item{
+    width: 100px;
+    height: 100px;
+    border: 5px solid black;
+    background-color: green;
+
+    /* justify-self is applied horizonatlly means x axis */
+    /* justify-self: start | end | center | stretch; */
+
+    /* justify-self: stretch; when you stretch it will take whole width and height of cell 
+    so before executing remove the width:100px and height:100px comment it */
+     /* justify-self: center; */
+
+    /* align-self: end;  self is for items and align-items is used by parent */
+
+     /* combination of justif-self and align-self */
+    /* place-self: start end;  */
+}    
