@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Work create the card</title>
+    <style>
+        *{
+          margin: 0px;
+          padding: 0px;
+          box-sizing: border-box;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(78, 78, 175, 0.426);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            width: 800px;
+            height: 400px;
+            display: flex;
+            flex-direction: row;
+        }
+        .box1{
+            width: 400px;
+            height: 100%;
+            background-color: rgb(66, 3, 66);
+            padding: 45px;
+            display: flex;
+            flex-direction: column;
+            row-gap: 40px;
+            justify-content: center;
+            align-items: center;
+        }
+        .box2{
+            width: 400px;
+            height: 100%;
+            
+        }
+        p ,h2{
+            color: azure;
+        }
+        .heading{
+            
+            font-size: 1.4rem;
+        }
+        .visualofuser{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            
+        }
+        .visualofuser p{
+           font-size: 0.7rem;
+             font-weight: 10; 
+             color: rgb(202, 216, 216);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="box1">
+                <div class="heading">
+                    <h2>Get insights that help your business grow</h2>
+                </div>
+                
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                     Possimus nam repellendus magni rem sed deleniti ex ullam
+                      ea nihil veniam?</p>
+                 
+                <div class="visualofuser">
+                    <div class="comment">
+                        <h2>10K+</h2>
+                        <p >Comments</p>
+                    </div>
+                    <div class="user">
+                        <h2>214</h2>
+                        <p>Paid Users</p>
+                    </div>
+                    <div class="view">
+                        <h2>12M+</h2>
+                        <p>views</p>
+                    </div>
+                </div>
+            </div>
+            <div class="box2">
+            <img src="./images/icon.jpg" alt="icon image" width="400px" height="100%">
+            </div>
+        </div> 
+    </div>
+</body>
+</html>
