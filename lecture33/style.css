@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;500;600;700&display=swap');
+
+
+:root {
+    --primary-color: #6366F1;
+    --accent-color: #3f83f8;
+    --text-color: #333333;
+    --link-color: #2563eb;
+    --background-color: #ffffff;
+    --light-gray: #f0f0f0;
+    --gray: #808080;
+    --dark-gray: #555;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+
+body{
+    font-family: 'Inter',sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.navsec{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.navsec header{
+    padding: 15px;
+    max-width: 1100px;
+    /* border: 3px solid black; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.studysync img{
+    width: 30px;
+    height: 25px;
+}
+span{
+    font-size: 30px;
+    font-weight: 1000;
+}
+.nav_contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.nav_contact nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px;
+}
+.nav_contact nav a{
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 500;
+}
+header .contactus{
+    display: flex;
+    flex-direction: row;
+    
+}
+.contactus{
+    width: 190px;
+    padding: 15px ;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+}
+header .contactus a{
+    text-decoration: none;
+    color: var(--background-color);
+    
+}
+main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.herosection{
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    /* border: 2px solid black; */
+    
+}
+.herosection .heroimg img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+.herosection .heroimg{
+    width: 500px;
+    height: 500px;
+    /* border: 2px solid black; */
+}
+.herosection .herotext{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    gap: 25px;
+    padding-right: 50px;
+}
+.herosection .herotext .txt3_div{
+    width: 100%;
+    font-size: 0.97rem;
+}
+.herosection .herotext #txt1{
+    color: var(--primary-color);
+    font-weight: 600;
+}
+.herosection .herotext #txt2{
+    font-size: 3rem;
+    font-weight: bold;
+    color: black;
+}
+.herosection .herotext .herobtn{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    column-gap: 10px;
+}
+.herosection .herotext .herobtn .start_btn{
+    width: 75px;
+    padding: 15px ;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+}
+.herosection .herotext .herobtn .take_tour_btn{
+    width: 75px;
+    padding: 15px ;
+    background-color: var(--text-color);
+    border-radius: 5px;
+}
+.herosection .herotext .herobtn .take_tour_btn a{
+text-decoration: none;
+    color: var(--background-color);
+}
+.herosection .herotext .herobtn .start_btn a{
+    text-decoration: none;
+    color: var(--background-color);
+}
