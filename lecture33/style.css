@@ -571,9 +571,12 @@ main{
     font-size: 1.2rem;
     font-weight: 600;
 }
-.social-link{
-    column-gap: 20px;
+
+
+.social-link {
+    margin: 5px;
 }
+
 .social-icon{
     width: 20px;
     height: 20px;
@@ -604,12 +607,17 @@ main{
     font-weight: 200px;
     font-size: 1rem;
 }
+.coulmn-list li a:hover{
+    color: var(--link-color);
+}
 .footer-text{
     font-size: 1rem;
     font-weight: 500;
     color: var(--dark-gray);
     border-top: 2px solid var(--light-gray);
     text-align: center;
+    margin-top: 10px;
+    padding: 10px 0px;
 }
 @media screen and (max-width:1080px){
     .footer-class{
